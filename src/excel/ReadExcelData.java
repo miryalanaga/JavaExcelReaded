@@ -10,7 +10,7 @@ import java.util.*;
 
 public class ReadExcelData {
     public static void main(String args[]) throws Exception {
-        FileInputStream fis = new FileInputStream("/Users/nagakalyanm/Documents/Start.xlsx");
+        FileInputStream fis = new FileInputStream("/Start.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(fis);
         XSSFSheet sheet = workbook.getSheet("Credentials");
         XSSFRow row = sheet.getRow(0);
